@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+        /* Add your styles here */
+        .row {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .address-row label {
+            vertical-align: top;
+        }
+
+        .btn-row {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="registration-form">
+
+        <h1>Employee Registration Form</h1>
+
+        <form action="/signup" method="post" enctype="multipart/form-data">
+
+            <div class="name-row row">
+                <label for="f-name">First Name</label>
+                <input type="text" id="f-name" name="f-name" required>
+
+                <label for="m-name">Middle Name</label>
+                <input type="text" id="m-name" name="m-name">
+
+                <label for="l-name">Last Name</label>
+                <input type="text" id="l-name" name="l-name" required>
+            </div>
+
+            <div class="gender-row row">
+                <label>Gender</label>
+
+                <input type="radio" name="gender" value="male" id="gender-male">
+                <label for="gender-male">Male</label>
+
+                <input type="radio" name="gender" value="female" id="gender-female">
+                <label for="gender-female">Female</label>
+
+                <input type="radio" name="gender" value="other" id="gender-other">
+                <label for="gender-other">Other</label>
+            </div>
+
+            <div class="dob-row row">
+                <label>Date of Birth</label>
+
+                <input type="number" name="dob-day" id="dob-day">
+                <label for="dob-day">Day</label>
+
+                <input type="number" name="dob-month" id="dob-month">
+                <label for="dob-month">Month</label>
+
+                <input type="number" name="dob-year" id="dob-year">
+                <label for="dob-year">Year</label>
+            </div>
+
+            <div class="qualification-row row">
+                <label>Qualification</label>
+
+                <input type="checkbox" name="qualification" value="10th" id="qual-10th">
+                <label for="qual-10th">10th</label>
+
+                <input type="checkbox" name="qualification" value="11th" id="qual-11th">
+                <label for="qual-11th">11th</label>
+
+                <input type="checkbox" name="qualification" value="graduation" id="qual-graduation">
+                <label for="qual-graduation">Graduation</label>
+
+                <input type="checkbox" name="qualification" value="post-graduation" id="qual-post-graduation">
+                <label for="qual-post-graduation">Post Graduation</label>
+            </div>
+
+            <div class="address-row row">
+                <label for="present-address">Present Address</label>
+                <textarea name="present-address" id="present-address" cols="30" rows="10"></textarea>
+
+                <label for="permanent-address">Permanent Address</label>
+                <textarea name="permanent-address" id="permanent-address" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="p-contact row">
+                <label for="p-contact">Primary Contact No. +91 </label>
+                <input type="number" name="p-contact" id="p-contact">
+            </div>
+
+            <div class="s-contact row">
+                <label for="s-contact">Secondary Contact No. +91 </label>
+                <input type="number" name="s-contact" id="s-contact">
+            </div>
+
+            <div class="p-email row">
+                <label for="p-email">Primary email ID </label>
+                <input type="email" name="p-email" id="p-email">
+            </div>
+
+            <div class="s-email row">
+                <label for="s-email">Secondary email ID </label>
+                <input type="email" name="s-email" id="s-email">
+            </div>
+
+            <div class="date-row row">
+                <label for="date-of-joining">Date of Joining</label>
+                <input type="date" name="date-of-joining" id="date-of-joining">
+            </div>
+
+            <div class="username-row row">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="password-row row">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="confirm-password-row row">
+                <label for="confirm-password">Retype Password</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+            </div>
+            <div class="photo-row row">
+                <label for="upload-photo">Upload Photo</label>
+                <input type="file" accept="image/*" id="upload-photo" name="upload-photo">
+            </div>
+
+            <div class="thumb-row row">
+                <label for="l-thumb">Upload Left Thumb</label>
+                <input type="file" accept="image/*" name="l-thumb" id="l-thumb">
+
+                <label for="r-thumb">Upload Right Thumb</label>
+                <input type="file" accept="image/*" name="r-thumb" id="r-thumb">
+            </div>
+
+            <div class="voice-row row">
+                <label for="voice-clip">Voice Clip</label>
+                <input type="file" accept="audio/*" id="voice-clip" name="voice-clip">
+            </div>
+
+            <div class="btn-row row">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
